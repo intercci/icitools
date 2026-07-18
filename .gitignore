@@ -1,0 +1,8 @@
+target
+Cargo.lock
+
+.env
+.claude
+.opencode
+.playwright-mcp
+.sisyphus

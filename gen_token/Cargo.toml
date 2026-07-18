@@ -1,0 +1,12 @@
+[package]
+name = "gen_token"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+anyhow = "1.0.102"
+base64 = "0.22.1"
+bcrypt = "0.19.0"
+clap = { version = "4.6.0", features = ["derive"] }
+dotenv = "0.15.0"
+pasetors = "0.7.8"

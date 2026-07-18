@@ -1,0 +1,10 @@
+[package]
+name = "upver"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+regex = "1.12.3"
+
+[dev-dependencies]
+serial_test = "3.4.0"

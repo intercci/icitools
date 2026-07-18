@@ -1,0 +1,13 @@
+[package]
+name = "dynamo_load"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+clap = { version = "4.6", features = ["derive"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+aws-sdk-dynamodb = "1.115"
+aws-config = "1.8"
+tokio = { version = "1.52", features = ["full"] }
+anyhow = "1.0"
