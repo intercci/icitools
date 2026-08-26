@@ -13,6 +13,7 @@ Each subdirectory is an independent tool you can compile and install on its own.
 | [gen_token](gen_token/) | Rust | Generate secure tokens using bcrypt hashing and PASETOT encryption. |
 | [lamb_policy](lamb_policy/) | Python | Clean up duplicate permissions in AWS Lambda function policies. |
 | [substr](substr/) | Rust | String substring extraction utility. |
+| [tos3cf](tos3cf/) | Rust | Sync static assets to S3 and trigger CloudFront cache invalidation with .env config. |
 | [upver](upver/) | Rust | Semantic version parsing and manipulation tool. |
 
 ## Getting Started
