@@ -33,7 +33,12 @@ enum Commands {
         /// plain
         #[arg(short, long)]
         plain: String,
-    }
+    },
+    Decode {
+        /// PASETO token to decode (without "Bearer " prefix)
+        #[arg(short, long)]
+        token: String,
+    },
 }
 
 fn main() -> Result<()> {
@@ -54,6 +59,11 @@ fn main() -> Result<()> {
         Commands::Bcrypt { plain } => {
             let encrypted: String = hash(plain, DEFAULT_COST).unwrap();
             println!("Encrypted password={}", encrypted);
+        }
+        Commands::Decode { token } => {
+            let k = Keys::new()?;
+            let claims = k.verify_token(&token)?;
+            println!("{}", claims.to_string()?);
         }
     }
 
